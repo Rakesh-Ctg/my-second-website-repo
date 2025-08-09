@@ -1,0 +1,590 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #a84414;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: #a84414;
+  }
+  
+  .cart {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+  }
+  
+  .banner-content {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .banner-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-content .highlight {
+    color: #a84414;
+  }
+  
+  .banner-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    .banner {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .banner-image {
+      margin-bottom: 20px;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.plants-section {
+    padding: 60px 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #4b2c15; /* A color similar to the "Our Plants" heading in the image */
+    margin: 0 0 10px;
+}
+
+.header p {
+    font-size: 1em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.2em;
+    margin: 0 0 5px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #ff8c00; /* A color similar to the button in the image */
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e57e00;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.plants-lover-section {
+  display: flex;
+  flex-direction:row;
+  align-items:justify;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.plants-lover-image-container {
+  position:relative;
+  flex:1;
+  max-width: 50%;
+  width:90%;
+  margin-bottom: 20px;
+  padding:2px ;
+  
+}
+
+.plants-lover-image {
+  width: 100%;
+  height: 380px;
+  display:block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(36, 36, 36, 0.04);
+
+}
+
+.trusted-seller-badge {
+  position:absolute;
+  top: -50px;
+  left: 43%;
+  transform: translateX(-30%);
+  
+ }
+
+.plants-lover-badge img {
+  width: 100%;
+  height: auto;
+}
+
+.plants-lover-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.plants-lover-content h2 {
+  font-size: 2.5rem;
+  color: #ab2727;
+  margin-bottom: 20px;
+}
+
+.plants-lover-content ul {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  gap:80%
+}
+
+.plants-lover-content li {
+  font-size: 1.0rem ;
+  color: #666;
+  margin-bottom: 15px;
+  position:relative;
+  padding-left: 20px;
+ 
+}
+
+.plants-lover-content li::before {
+  content: '•';
+  color: #4CAF50;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .plants-lover-section {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .plants-lover-image-container {
+      max-width: 100%;
+  }
+
+  .plants-lover-content {
+      padding-left: 0;
+      text-align: left;
+      width: 90%;
+      max-width: 500px;
+  }
+}
+
+
+.latest-deals-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.latest-deals-header h2 {
+  font-size: 2.5rem;
+  color: #f88379;
+  margin-bottom: 10px;
+}
+
+.latest-deals-header p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.deals-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.deal-card {
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(243, 224, 224, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+}
+
+.deal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.deal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.deal-card:hover .deal-overlay {
+  opacity: 1;
+}
+
+.deal-overlay span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #45a049;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .deals-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .deal-card {
+      width: 90%;
+  }
+}
+
+.join-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url('assets/news-letter-bg.png'); /* Replace with your actual background image URL */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.content-wrapper {
+  background-color: rgba(0, 0, 0, 0.4); /* Optional: Adds a subtle overlay for better text readability */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.join-message {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.email-input {
+  width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.subscribe-btn {
+  background-color: #ff6a00; /* Example color from the image */
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #e55c00;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .join-message {
+      font-size: 1.8rem;
+  }
+  
+  .input-container {
+      flex-direction: column;
+  }
+
+  .email-input {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  }
+
+  .subscribe-btn {
+      width: 100%;
+      border-radius: 5px;
+  }
+}
+
+/* Footer Section Styling */
+.footer-section {
+  background-color: #fff;
+  color: #333;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding:auto;
+  gap: 40px;
+}
+
+/* Left side (Logo and description) */
+.footer-logo-description {
+  max-width: 250px;
+}
+
+.footer-logo {
+  height: auto;
+  margin-bottom: 15px;
+  /* এখানে আপনার লোগোর আসল মাপ ব্যবহার করুন */
+}
+
+.footer-logo-description p {
+  font-size: 0.9rem;
+  line-height: 1.1;
+  margin:1px ;
+  padding: 0px ;
+}
+
+/* Center (Navigation links) */
+.footer-links-group {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links-column ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links-column ul li a:hover {
+  color: #ff8c42; /* Hover color similar to previous section */
+}
+
+/* Right side (Social media icons) */
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+  }
+
+  .footer-logo-description {
+      max-width: 100%;
+  }
+
+  .footer-logo {
+      margin-bottom: 10px;
+  }
+
+  .footer-links-group {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .footer-social-icons {
+      justify-content: center;
+  }
+}
